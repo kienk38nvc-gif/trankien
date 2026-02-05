@@ -1,0 +1,7 @@
+   <h3>Vòng lặp for</h3>
+        <p>Dùng khi biết trước số lần lặp.</p>
+        <pre>
+for (let i = 0; i < n; i++) {
+  // code
+}
+        </pre>

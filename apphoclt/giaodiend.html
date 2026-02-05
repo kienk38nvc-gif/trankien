@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App học lập trình</title>
+    <link rel="stylesheet" href="./gd.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- Cột trái -->
+        <div class="sidebar">
+            <h2>Bài học</h2>
+            <ul>
+                <li data-file="cacfile/bien.txt">Biến là gì?</li>
+                <li data-file="cacfile/if.txt">Câu lệnh if</li>
+
+                <li id="loop">Vòng lặp
+                    <ul id="vonglap" style="display:none">
+                        <li data-file="cacfile/for.txt">Vòng lặp for</li>
+                        <li data-file="cacfile/while.txt">Vòng lặp while</li>
+                        <li data-file="cacfile/do-while.txt">Vòng lặp do-while</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Cột phải -->
+        <div class="content">
+            <h2>Nội dung</h2>
+            <div id="noidung">
+                <p>Chọn một bài học bên trái 👈</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./gd.js"></script>
+</body>
+
+</html>

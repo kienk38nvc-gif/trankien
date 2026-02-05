@@ -1,0 +1,64 @@
+1. Biến Và Các Quy Tắc Đặt Tên Biến
+
+Biến
+Biến (variable) được sử dụng để lưu trữ giá trị cho bài toán của các bạn, ví dụ khi bài toán cho bạn chiều dài, chiều rộng của một hình chữ nhật bạn có thể khai báo 2 biến tương ứng để lưu lại giá trị này.Hầu như mọi chương trình của các bạn đều sử dụng đến các biến, để khai báo biến trong C bạn cần chỉ ra 3 thứ 
+
+Kiểu dữ liệu của biến đó là gì ? Ví dụ : int, long long, float, double...
+Tên biến mà bạn muốn đặt cho nó là gì ? Ví dụ : chuVi, dienTich, salary, point...
+Giá trị mà bạn muốn khởi tạo cho nó là gì? Nếu bạn khai báo biến mà không khởi tạo giá trị thì nó sẽ có giá trị ngẫu nhiên
+Cú pháp đặt tên biến : [Kiểu dữ liệu] [Tên biến]; 
+
+Ví dụ 1: Khai báo biến nhưng không khởi tạo giá trị
+
+#include <stdio.h>
+
+int main(){
+    int chuvi;
+    long long dientich;
+    float bankinh;
+    double diem;
+    char kitu;
+    return 0;
+}
+Ví dụ 2 : Khai báo biến có khởi tạo giá trị 
+
+#include <stdio.h>
+
+int main(){
+    int chuvi = 28;
+    long long dientich = 8129319238322;
+    float bankinh = 2.5;
+    double diem = 9.0;
+    char kitu = '@';
+    return 0;
+}
+Ví dụ 3 : Bạn có thể khai báo các biến có cùng kiểu dữ liệu trên cùng 1 dòng
+
+#include <stdio.h>
+
+int main(){
+    int a = 100, b = 200, c = 300;
+    char x = '@', y = 'Z', t = '#';
+    long long n, m, p;
+    return 0;
+}
+Quy Tắc Đặt Tên Biến 
+
+Trong ngôn ngữ lập trình C, bạn cần phải tuân theo những quy tắc sau khi đặt tên biến : 
+
+Quy tắc	Ví dụ đặt tên biến sai
+Tên biến không được bắt đầu bằng chữ số	123bankinh, 28tech, 1dientich, 0diem...
+Tên biến không được chứa dấu cách hoặc các ký tự đặc biệt	ban kinh, dien#tich, chu$vi...
+Tên biến không được trùng với các keyword có sẵn trong C	int, main, float, for, while...
+Không được đặt 2 biến cùng tên, kể cả chúng khác kiểu dữ liệu	int a; float a;
+Tên biến trong C có phân biệt chữ hoa và chữ thường	banKinh và bankinh là 2 biến khác nhau
+
+
+Khi đặt tên biến nên đặt có ý nghĩa và tránh đặt tên biến quá dài, trong C thì không có quy chuẩn về cách đặt tên 
+biến nào cả, bạn có thể lựa chọn đặt tên biến theo cách viết hoa chữ cái đầu của từng từ ví dụ BanKinh, ChuVi, DienTich, ChieuRong, hoặc các từ viết cách nhau một dấu gạch dưới ví dụ ban_kinh, chu_vi, dien_tich... 
+
+
+
+2.Từ Khóa - Keyword 
+
+Các ngôn ngữ lập trình đều có bộ từ khóa có sẵn, bạn không nhất thiết phải học thuộc những từ khóa này vì trong quá trình học dần dần bạn sẽ quen mặt với các từ khóa này và nhớ được chúng. Chú ý rằng bạn không được đặt tên biến trong chương trình của mình trùng với tên từ khóa. 

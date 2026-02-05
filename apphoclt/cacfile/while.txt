@@ -1,0 +1,7 @@
+  <h3>Vòng lặp while</h3>
+        <p>Dùng khi chưa biết trước số lần lặp.</p>
+        <pre>
+while (dieu_kien) {
+  // code
+}
+        </pre>
